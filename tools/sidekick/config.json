@@ -1,0 +1,33 @@
+{
+  "project": "College",
+  "libraries": [
+    {
+      "text": "Blocks",
+      "paths": ["https://main--milo--adobecom.hlx.page/docs/library/blocks.json"]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "translate",
+      "title": "Translate",
+      "environments": [ "edit" ],
+      "url": "https://milo.adobe.com/tools/translation/index.html",
+      "passReferrer": true,
+      "include_paths": [ "**.xlsx**" ]
+    },
+    {
+      "title": "Send to CaaS",
+      "id": "sendtocaas",
+      "environments": ["dev","preview", "live", "prod"],
+      "event": "send-to-caas",
+      "excludePaths": ["/tools/caas**", "*.json"]
+    },
+    {
+      "title": "Check Schema",
+      "id": "checkschema",
+      "environments": ["prod"],
+      "event": "check-schema",
+      "excludePaths": ["/tools**", "*.json"]
+    }
+  ]
+}
