@@ -1,0 +1,43 @@
+/* doc - consonant v5.1 */
+.doc {
+  padding: var(--spacing-xxl) 0;
+  width: var(--grid-container-width);
+  margin: 0 auto;
+}
+
+.dark .doc,
+.doc.dark {
+  color: #fff;
+}
+
+.doc .heading-row {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.doc .heading-row .headline,
+.doc .heading-row p {
+  margin: 0 0 var(--spacing-xs);
+}
+
+.doc .media>.foreground .media-row {
+  padding: var(--spacing-l) 0;
+}
+
+.doc .media:last-of-type>.foreground .media-row {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .doc .heading-row {
+    max-width: 1000px;
+  }
+
+  .doc.small .heading-row {
+    max-width: 800px;
+  }
+
+  .doc.large .heading-row {
+    max-width: 1200px;
+  }
+}
