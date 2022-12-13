@@ -1,6 +1,6 @@
 mountpoints:
 #  /: https://adobe-my.sharepoint.com/:f:/r/personal/kgaba_adobe_com/Documents/helix-sites/exl
   /: 
-    url: http://2192-130-248-112-29.ngrok.io/api/md2html
+    url: http://2192-130-248-112-29.ngrok.io/api/md2html/
     type: markup
     suffix: '.html'
