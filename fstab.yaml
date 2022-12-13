@@ -1,2 +1,6 @@
 mountpoints:
-  /: https://adobe-my.sharepoint.com/:f:/r/personal/kgaba_adobe_com/Documents/helix-sites/exl
+#  /: https://adobe-my.sharepoint.com/:f:/r/personal/kgaba_adobe_com/Documents/helix-sites/exl
+  /: 
+    url: http://localhost:8081/api/md2html
+    type: markup
+    suffix: '.html'

@@ -15,6 +15,17 @@ export default async function decorate(block) {
     while (fragmentSection && fragmentSection.firstChild) {
       blockSection.insertBefore(fragmentSection.firstChild, block.closest('.fragment-wrapper'));
     }
+
+    const metadata = document.querySelector('#metadata');
+    const head = document.getElementsByTagName('head');
+    let title = document.querySelector('title');
+    title.innerText = metadata.dataset.title
+    let meta = document.createElement('meta');
+    meta.name = "description";
+    meta.content = metadata.dataset.description;
+    head[0].appendChild(meta);
+
+
   }
   block.closest('.doc').remove();
 }
