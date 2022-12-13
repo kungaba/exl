@@ -1,6 +1,6 @@
 mountpoints:
 #  /: https://adobe-my.sharepoint.com/:f:/r/personal/kgaba_adobe_com/Documents/helix-sites/exl
   /: 
-    url: http://fccd-192-150-10-203.ngrok.io/api/md2html
+    url: https://ygwb4c30d3.execute-api.us-east-1.amazonaws.com/dev/api/md2html
     type: markup
     suffix: '.html'
